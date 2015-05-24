@@ -3,7 +3,7 @@ layout: post
 title: "[Repost] 2015 03 28 One month after working as employee officially."
 description: ""
 category:
-tags: []
+tags: working
 ---
 {% include JB/setup %}
 

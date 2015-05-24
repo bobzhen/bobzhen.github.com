@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Repost] 2015 02 07 ActionController::Live   Streaming Functionality in Rails 4"
+title: "[Repost] 2015 02 07 ActionController::Live Streaming Functionality in Rails 4"
 description: ""
 category:
-tags: []
+tags: Rails ActionController
 ---
 {% include JB/setup %}
 

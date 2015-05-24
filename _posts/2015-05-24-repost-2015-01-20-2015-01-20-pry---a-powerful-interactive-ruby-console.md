@@ -3,7 +3,7 @@ layout: post
 title: "[Repost] 2015 01 20 2015 01 20 Pry   A powerful interactive Ruby console"
 description: ""
 category:
-tags: []
+tags: pry
 ---
 {% include JB/setup %}
 
