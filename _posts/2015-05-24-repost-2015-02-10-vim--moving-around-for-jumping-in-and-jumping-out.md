@@ -3,7 +3,7 @@ layout: post
 title: "[Repost] 2015 02 10 VIM  moving around for jumping in and jumping out."
 description: ""
 category:
-tags: []
+tags: Vim
 ---
 {% include JB/setup %}
 

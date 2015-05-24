@@ -3,7 +3,7 @@ layout: post
 title: "[Repost] 2015 01 14 I have signed my first job contract today, with three month probation"
 description: ""
 category:
-tags: []
+tags: working
 ---
 {% include JB/setup %}
 
