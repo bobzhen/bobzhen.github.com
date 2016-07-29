@@ -3,7 +3,7 @@ layout: post
 title: "[文档翻译] Elixir学习: Alias, Require 和 Import"
 description: "中文翻译"
 category:
-tags: railsconf 2014
+tags: elixir chinese-translation
 ---
 {% include JB/setup %}
 
