@@ -33,6 +33,7 @@ end
 
 
 下面的代码示例展示在一个Phoenix连接中，如何使用多个插头完成一系列的变换。
+
 ```elixir
 defmodule HelloPhoenix.MessageController do
   use HelloPhoenix.Web, :controller
@@ -45,6 +46,7 @@ end
 ```
 
 依从插头的规范，`put_headers/2`, `put_layout/2`, 和 `action/2`将app的请求转化为一系列的显示变换。这些变换还没有结束。现在我们模拟一个场景，来感受一下插头的设计所带来的高效：当我们需要检查多重条件，然后，如果条件失败，则跳转或者终止。在没有插头的情况下，我们可能会这样写：
+
 ```elixir
 defmodule HelloPhoenix.MessageController do
   use HelloPhoenix.Web, :controller
@@ -71,6 +73,7 @@ end
 ```
 
 几步验证和授权需要这么复杂的内嵌和代码重复？下面我们来优化一下，仅用几个插头:
+
 ```elixir
 defmodule HelloPhoenix.MessageController do
   use HelloPhoenix.Web, :controller
