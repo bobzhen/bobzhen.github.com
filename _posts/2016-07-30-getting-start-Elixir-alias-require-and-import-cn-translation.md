@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[文档翻译] Elixir学习: Alias, Require 和 Import"
+title: "[文档翻译] Elixir语言学习: Alias, Require 和 Import"
 description: "中文翻译"
 category:
 tags: elixir chinese-translation
