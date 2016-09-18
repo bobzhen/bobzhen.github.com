@@ -23,9 +23,9 @@ Javascript中的this是一个很神奇但又很恼人的东西。
 
 当习惯了this，它的使用规则会一目了然。[ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)标准定义了`this`关键字是用来`对当前执行上下文中，ThisBinding的计算`(§11.1.1)。ThisBinding被Javascript解释器用来计算Javascript代码，可以理解为一个持有对某个对象的引用的特殊CPU寄存器。在下面三种不同情况中，当解释器创建一个执行环境(上下文)的时候，它会更新ThisBinding:
 
-1. 初始化的全局执行环境(上下文)
+### 1. 初始化的全局执行环境(上下文)
 
-这种情况下，当`<script>`元素在html中被触发时，Javascript代码会被计算:
+这种情况下，当`<script>`元素在html中被触发时，Javascript代码将被计算(evaluate):
 
 ```html
 <script type="text/javascript">//<![CDATA[
@@ -39,7 +39,7 @@ Javascript中的this是一个很神奇但又很恼人的东西。
 
 在这种情况下，ThisBinding的值为全局对象: window.(§10.4.1.1)
 
-2. 在一段被计算的代码(eval code)中
+### 2. 在一段被计算的代码(eval code)中
 
 1) 直接调用eval()方法
   ThisBinding的值没有任何变化：它的值和当前调用的执行环境的ThisBinding的值一样。
@@ -49,7 +49,7 @@ Javascript中的this是一个很神奇但又很恼人的东西。
 
 EMACScript($15.1.2.1.1)中定义了什么是`直接调用eval()方法`。一般来说，`eval(…)`是一个直接调用，而相对应的，`(0, eval)(…)`或者`var indirectEval = eval; indirectEval()`是一个对eval()方法的间接调用。更多解释可以参考在[Javascript中(1,eval)(‘this’)和eval(‘this’)的比较](http://stackoverflow.com/q/9107240/196844)问题中，[chuckj](http://stackoverflow.com/questions/9107240/1-evalthis-vs-evalthis-in-javascript/9107491#9107491)的回答，另外如果你可能会用到间接eval()方法调用，参考这篇[博客](http://dmitrysoshnikov.com/ecmascript/es5-chapter-2-strict-mode/#indirect-eval-call)。
 
-3. 在函数内部
+### 3. "进入"函数代码中
 
 这种情况发生在调用一个函数的时候。当一个对象调用一个函数的时候，比如`obj.myMethod()`或者等同的调用`obj["myMethod"]()`，这种情况下，ThisBinding的值为这个对象(参考§13.2.1例子中的`对象`)。在其他大多数情况下，ThisBinding还是被设置为全局对象(§10.4.3)。
 
