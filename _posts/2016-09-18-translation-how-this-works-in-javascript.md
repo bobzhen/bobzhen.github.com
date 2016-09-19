@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[文档翻译] Javascript中的this"
+title: "[问答翻译] Javascript中的this"
 description: "中文翻译"
 category:
 tags: javascript this chinese-translation
