@@ -12,7 +12,6 @@ tags: phoenix react npm chinese-translation
 原文链接: [Phoenix v1.1.2 and React.js
 ](https://medium.com/@diamondgfx/phoenix-v1-1-2-and-react-js-3dbd195a880a#.nadyhxiyx)
 
-
 <figure>
     🎉这个logo有点像巧克力和花生黄油。
     <img src="https://cdn-images-1.medium.com/max/1600/1*qN1NFtAvST7tkBx5gDfmDw.png" style="max-width: 500px;margin: auto;"/>
